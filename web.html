@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.83">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 15.0px; font: 12.8px Arial; color: #222222; -webkit-text-stroke: #222222; background-color: #ffffff}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 15.0px; font: 12.8px Arial; color: #222222; -webkit-text-stroke: #222222; min-height: 15.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 15.0px; font: 12.8px Arial; color: #1155cc; -webkit-text-stroke: #1155cc; background-color: #ffffff}
+    span.s1 {font-kerning: none}
+    span.s2 {text-decoration: underline ; font-kerning: none; color: #1155cc; -webkit-text-stroke: 0px #1155cc}
+    span.s3 {font-kerning: none; color: #222222; -webkit-text-stroke: 0px #222222}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html xmlns="<a href="http://www.w3.org/1999/xhtml"><span class="s2">http://www.w3.org/1999/xhtml</span></a>" xml:lang="en" lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;title&gt;Untitled Document&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"/&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;meta http-equiv="content-type" content="text/html; charset=utf-8" /&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;meta name="apple-mobile-web-app-capable" content="yes" /&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;link type="text/css" href="resources/css/reset.css" rel="Stylesheet" /&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;link type="text/css" href="resources/css/default.css" rel="Stylesheet" /&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;!--&lt;link href='<a href="https://fonts.googleapis.com/css?family=Nunito:300"><span class="s2">https://fonts.googleapis.com/css?family=Nunito:300</span></a>' rel='stylesheet' type='text/css'&gt;--&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">    &lt;script type="text/javascript"&gt;</span></p>
+<p class="p1"><span class="s1">        if (location.href.toString().indexOf('file://localhost/') == 0) {</span></p>
+<p class="p1"><span class="s1">            location.href = location.href.toString().replace('file://localhost/', 'file:///');</span></p>
+<p class="p1"><span class="s1">        }</span></p>
+<p class="p1"><span class="s1">    &lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">    &lt;!-- 8.0.0.3338 --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;script src="resources/scripts/jquery-1.7.1.min.js"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;script src="resources/scripts/startPre.js"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;script src="data/document.js"&gt;&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">    &lt;style type="text/css"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">#outerContainer {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>width:1000px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>height:1500px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.vsplitbar {</span></p>
+<p class="p1"><span class="s1">    width: 3px;</span></p>
+<p class="p1"><span class="s1">    /*background: #B9B9B9;*/</span></p>
+<p class="p1"><span class="s1">    border-right: 1px solid #8f949a;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.vsplitbar:hover, .vsplitbar.active {</span></p>
+<p class="p1"><span class="s1">    background: #8f949a;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">#rightPanel {</span></p>
+<p class="p1"><span class="s1">    background-color: White;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/*#leftPanel {</span></p>
+<p class="p1"><span class="s1">    min-width: 120px;</span></p>
+<p class="p1"><span class="s1">}*/</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.splitterMask {</span></p>
+<p class="p1"><span class="s1">   position:absolute;</span></p>
+<p class="p1"><span class="s1">   top: 0;</span></p>
+<p class="p1"><span class="s1">   left: 0;</span></p>
+<p class="p1"><span class="s1">   width: 100%;</span></p>
+<p class="p1"><span class="s1">   height: 100%;</span></p>
+<p class="p1"><span class="s1">   overflow: hidden;</span></p>
+<p class="p1"><span class="s1">   background-image: url(resources/images/transparent.gif);</span></p>
+<p class="p1"><span class="s1">   z-index: 20000;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">    &lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;script type="text/javascript" language="JavaScript"&gt;&lt;!--</span></p>
+<p class="p1"><span class="s1">        var SITEMAP_COLLAPSE_VAR_NAME = 'c';</span></p>
+<p class="p1"><span class="s1">        var PLUGIN_VAR_NAME = 'g';</span></p>
+<p class="p1"><span class="s1">        var FOOTNOTES_VAR_NAME = 'fn';</span></p>
+<p class="p1"><span class="s1">        var ADAPTIVE_VIEW_VAR_NAME = 'view';</span></p>
+<p class="p1"><span class="s1">        var lastLeftPanelWidth = 295;</span></p>
+<p class="p1"><span class="s1">        var toolBarOnly = true;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">        // isolate scope</span></p>
+<p class="p1"><span class="s1">        (function() {</span></p>
+<p class="p1"><span class="s1">            setUpController();</span></p>
+<p class="p1"><span class="s1">            </span></p>
+<p class="p1"><span class="s1">            var configuration = $axure.document.configuration;</span></p>
+<p class="p1"><span class="s1">            var _settings = {};</span></p>
+<p class="p1"><span class="s1">            _settings.projectId = configuration.prototypeId;</span></p>
+<p class="p1"><span class="s1">            _settings.isAxshare = configuration.isAxshare;</span></p>
+<p class="p1"><span class="s1">            _settings.loadFeedbackPlugin = configuration.loadFeedbackPlugin;</span></p>
+<p class="p1"><span class="s1">            var cHash = getHashStringVar(SITEMAP_COLLAPSE_VAR_NAME);</span></p>
+<p class="p1"><span class="s1">            _settings.startCollapsed = cHash == "1";</span></p>
+<p class="p1"><span class="s1">            if(cHash == "2") closePlayer();</span></p>
+<p class="p1"><span class="s1">            var gHash = getHashStringVar(PLUGIN_VAR_NAME);</span></p>
+<p class="p1"><span class="s1">            if(gHash == "") gHash = 1;</span></p>
+<p class="p1"><span class="s1">            _settings.startPluginGid = gHash;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            $axure.player.settings = _settings;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            $(window).bind('load', function() {</span></p>
+<p class="p1"><span class="s1">                if(CHROME_5_LOCAL &amp;&amp; !$('body').attr('pluginDetected')) {</span></p>
+<p class="p1"><span class="s1">                    window.location = 'resources/chrome/chrome.html';</span></p>
+<p class="p1"><span class="s1">                }</span></p>
+<p class="p1"><span class="s1">            });</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            $(document).ready(function() {</span></p>
+<p class="p1"><span class="s1">                $axure.page.bind('load.start', mainFrame_onload);</span></p>
+<p class="p1"><span class="s1">                $axure.messageCenter.addMessageListener(messageCenter_message);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                $(document).on('pluginShown', function (event, data) {</span></p>
+<p class="p1"><span class="s1">                    setVarInCurrentUrlHash('g', data ? data : '');</span></p>
+<p class="p1"><span class="s1">                });</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                $(document).on('pluginCreated', function(event, data) {</span></p>
+<p class="p1"><span class="s1">                    if($axure.player.settings.startPluginGid == data) {</span></p>
+<p class="p1"><span class="s1">                        $axure.player.showPlugin(data);</span></p>
+<p class="p1"><span class="s1">                    }</span></p>
+<p class="p1"><span class="s1">                });</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                if($axure.player.settings.loadFeedbackPlugin) {</span></p>
+<p class="p1"><span class="s1">                    if($axure.player.settings.isAxshare) {</span></p>
+<p class="p1"><span class="s1">                        $axure.utils.loadJS('/Scripts/plugins/feedback/feedback8.js');</span></p>
+<p class="p1"><span class="s1">                    } else {</span></p>
+<p class="p3"><span class="s3">                        $axure.utils.loadJS('<a href="http://share.axure.com/Scripts/plugins/feedback/feedback8.js'"><span class="s2">http://share.axure.com/Scripts/plugins/feedback/feedback8.js'</span></a>);</span></p>
+<p class="p1"><span class="s1">                    }</span></p>
+<p class="p1"><span class="s1">                }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                if(navigator.userAgent.indexOf("MSIE") &gt;= 0) $('#outerContainer').width('100%');</span></p>
+<p class="p1"><span class="s1">                initialize();</span></p>
+<p class="p1"><span class="s1">                if($axure.player.settings.startCollapsed) $('#outerContainer').splitter({ sizeLeft: 0 });</span></p>
+<p class="p1"><span class="s1">                else $('#outerContainer').splitter({ sizeLeft: lastLeftPanelWidth });</span></p>
+<p class="p1"><span class="s1">                $('#leftPanel').width(lastLeftPanelWidth);</span></p>
+<p class="p1"><span class="s1">                </span></p>
+<p class="p1"><span class="s1">                $(window).resize(function() { resizeContent(); });</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                $('#maximizePanelContainer').hide();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                initializeLogo();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                $(window).resize();</span></p>
+<p class="p1"><span class="s1">                resizeContent();</span></p>
+<p class="p1"><span class="s1">                </span></p>
+<p class="p1"><span class="s1">                $axure.player.collapseToBar();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                if($axure.player.settings.startCollapsed) {</span></p>
+<p class="p1"><span class="s1">                    collapse();</span></p>
+<p class="p1"><span class="s1">                    $('#leftPanel').width(0);</span></p>
+<p class="p1"><span class="s1">                }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                if(MOBILE_DEVICE) {</span></p>
+<p class="p1"><span class="s1">                    $('#interfaceControlFrameMinimizeContainer').height('45px');</span></p>
+<p class="p1"><span class="s1">                    $('#interfaceControlFrameMinimizeContainer a').height('45px');</span></p>
+<p class="p1"><span class="s1">                    $('#interfaceControlFrameHeaderContainer').css('margin-top','45px');</span></p>
+<p class="p1"><span class="s1">                    $('#interfaceControlFrameCloseContainer a').css('padding','10px 0px');</span></p>
+<p class="p1"><span class="s1">                    $('#maximizePanelContainer').height('45px');//.css('top','inherit').css('bottom','0px');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                    $('body').removeClass('hashover');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                    if(IOS) {</span></p>
+<p class="p1"><span class="s1">                        $('#rightPanel').css('overflow', 'auto').css('-webkit-overflow-scrolling', 'touch').css('-ms-overflow-x', 'hidden');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                        window.addEventListener("orientationchange", function() {</span></p>
+<p class="p1"><span class="s1">                            var viewport = document.querySelector("meta[name=viewport]");</span></p>
+<p class="p1"><span class="s1">                            //so iOS doesn't zoom when switching back to portrait</span></p>
+<p class="p1"><span class="s1">                            viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0');</span></p>
+<p class="p1"><span class="s1">                            viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');</span></p>
+<p class="p1"><span class="s1">                            resizeContent();</span></p>
+<p class="p1"><span class="s1">                        }, false);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                        $axure.page.bind('load.start', function() {</span></p>
+<p class="p1"><span class="s1">                            resizeContent();</span></p>
+<p class="p1"><span class="s1">                        });</span></p>
+<p class="p1"><span class="s1">                    }</span></p>
+<p class="p1"><span class="s1">                }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            });</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            function initialize() {</span></p>
+<p class="p1"><span class="s1">                var legacyQString = getQueryString("Page");</span></p>
+<p class="p1"><span class="s1">                if (legacyQString.length &gt; 0) {</span></p>
+<p class="p1"><span class="s1">                    location.href = location.href.substring(0, location.href.indexOf("?")) + "#p=" + legacyQString;</span></p>
+<p class="p1"><span class="s1">                    return;</span></p>
+<p class="p1"><span class="s1">                }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                var mainFrame = document.getElementById("mainFrame");</span></p>
+<p class="p1"><span class="s1">                mainFrame.contentWindow.location.href = getInitialUrl();</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            function initializeLogo() {</span></p>
+<p class="p1"><span class="s1">                if($axure.document.configuration.logoImagePath) {</span></p>
+<p class="p1"><span class="s1">                    var image = new Image();</span></p>
+<p class="p1"><span class="s1">                    image.onload = function() {</span></p>
+<p class="p1"><span class="s1">                        $('#logoImage').css('max-width', this.width + 'px');</span></p>
+<p class="p1"><span class="s1">                        $axure.player.resizeContent();</span></p>
+<p class="p1"><span class="s1">                    };</span></p>
+<p class="p1"><span class="s1">                    image.src = $axure.document.configuration.logoImagePath;</span></p>
+<p class="p1"><span class="s1">                </span></p>
+<p class="p1"><span class="s1">                    $('#interfaceControlFrameLogoImageContainer').html('&lt;img id="logoImage" src="" /&gt;');</span></p>
+<p class="p1"><span class="s1">                    $('#logoImage').attr('src', $axure.document.configuration.logoImagePath).load(function() { resizeContent(); });</span></p>
+<p class="p1"><span class="s1">                } else $('#interfaceControlFrameLogoImageContainer').hide();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                if ($axure.document.configuration.logoImageCaption) {</span></p>
+<p class="p1"><span class="s1">                    $('#interfaceControlFrameLogoCaptionContainer').html($axure.document.configuration.logoImageCaption);</span></p>
+<p class="p1"><span class="s1">                } else $('#interfaceControlFrameLogoCaptionContainer').hide();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                if(!$('#interfaceControlFrameLogoImageContainer').is(':visible') &amp;&amp; !$('#interfaceControlFrameLogoCaptionContainer').is(':visible')) {</span></p>
+<p class="p1"><span class="s1">                    $('#interfaceControlFrameLogoContainer').hide();</span></p>
+<p class="p1"><span class="s1">                }</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            var resizeContent = $axure.player.resizeContent = function() {</span></p>
+<p class="p1"><span class="s1">                var newHeight = $(window).height();</span></p>
+<p class="p1"><span class="s1">                var newWidth = $(window).width();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                var controlContainerHeight = newHeight;// - 30;</span></p>
+<p class="p1"><span class="s1">                if($('#interfaceControlFrameLogoContainer').is(':visible')) controlContainerHeight -= $('#interfaceControlFrameLogoContainer').outerHeight();// + 16;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                $('#outerContainer').height(newHeight).width(newWidth);</span></p>
+<p class="p1"><span class="s1">                $('.vsplitbar').height(newHeight);</span></p>
+<p class="p1"><span class="s1">                $('#leftPanel').height(newHeight);</span></p>
+<p class="p1"><span class="s1">                $('#interfaceControlFrame').height(newHeight);</span></p>
+<p class="p1"><span class="s1">                $('#interfaceControlFrameContainer').height(newHeight);</span></p>
+<p class="p1"><span class="s1">                $('#interfaceControlFrameHostContainer').height(controlContainerHeight);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                $('#rightPanel').height(newHeight);</span></p>
+<p class="p1"><span class="s1">                $('#mainFrame').height(newHeight);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                if($('#leftPanel').is(':visible')) $('#rightPanel').width($(window).width() - $('#leftPanel').width() - 1);// $('.vsplitbar').width());</span></p>
+<p class="p1"><span class="s1">                else $('#rightPanel').width($(window).width());</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                $(document).trigger('ContainerHeightChange',[controlContainerHeight]);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                if(MOBILE_DEVICE) {</span></p>
+<p class="p1"><span class="s1">                    if(!(getHashStringVar(ADAPTIVE_VIEW_VAR_NAME).length &gt; 0)) $axure.messageCenter.postMessage('setAdaptiveViewForSize', {'width':newWidth, 'height':$('#rightPanel').height()});</span></p>
+<p class="p1"><span class="s1">                }</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            var collapseToBar = $axure.player.collapseToBar = function() {</span></p>
+<p class="p1"><span class="s1">                lastLeftPanelWidth = $('#leftPanel').width();</span></p>
+<p class="p1"><span class="s1">                $('#leftPanel').width('55px');</span></p>
+<p class="p1"><span class="s1">                $('.vsplitbar').hide();</span></p>
+<p class="p1"><span class="s1">                $('#rightPanel').width($(window).width() - $('#leftPanel').width());</span></p>
+<p class="p1"><span class="s1">                $(window).resize();</span></p>
+<p class="p1"><span class="s1">                $('#outerContainer').trigger('resize');</span></p>
+<p class="p1"><span class="s1">                toolBarOnly = true;</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            var expandFromBar = $axure.player.expandFromBar = function() {</span></p>
+<p class="p1"><span class="s1">                if($('.vsplitbar').is(':visible')) return;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                $('#leftPanel').width(lastLeftPanelWidth);</span></p>
+<p class="p1"><span class="s1">                $('.vsplitbar').show();</span></p>
+<p class="p1"><span class="s1">                $('#rightPanel').width($(window).width() - $('#leftPanel').width() - 1);// $('.vsplitbar').width());</span></p>
+<p class="p1"><span class="s1">                $(window).resize();</span></p>
+<p class="p1"><span class="s1">                $('#outerContainer').trigger('resize');</span></p>
+<p class="p1"><span class="s1">                toolBarOnly = false;</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">        })();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">        function messageCenter_message(message, data) {</span></p>
+<p class="p1"><span class="s1">            if(message == 'expandFrame') expand();</span></p>
+<p class="p1"><span class="s1">            else if(message == 'getCollapseFrameOnLoad' &amp;&amp; $axure.player.settings.startCollapsed &amp;&amp; !MOBILE_DEVICE) $axure.messageCenter.postMessage('collapseFrameOnLoad');</span></p>
+<p class="p1"><span class="s1">        }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">        </span></p>
+<p class="p1"><span class="s1">        function getInitialUrl() {</span></p>
+<p class="p1"><span class="s1">            var pageName = getHashStringVar("p");</span></p>
+<p class="p1"><span class="s1">            if(pageName.length &gt; 0) return pageName + ".html";</span></p>
+<p class="p1"><span class="s1">            else {</span></p>
+<p class="p1"><span class="s1">                var url = getFirstPageUrl($axure.document.sitemap.rootNodes);</span></p>
+<p class="p1"><span class="s1">                return (url ? url : "about:blank");</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p1"><span class="s1">        }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">        function getFirstPageUrl(nodes) {</span></p>
+<p class="p1"><span class="s1">            for (var i = 0; i &lt; nodes.length; i++) {</span></p>
+<p class="p1"><span class="s1">                var node = nodes[i];</span></p>
+<p class="p1"><span class="s1">                if (node.url) return node.url;</span></p>
+<p class="p1"><span class="s1">                else {</span></p>
+<p class="p1"><span class="s1">                    var hasChildren = (node.children &amp;&amp; node.children.length &gt; 0);</span></p>
+<p class="p1"><span class="s1">                    if (hasChildren) {</span></p>
+<p class="p1"><span class="s1">                        var url = getFirstPageUrl(node.children);</span></p>
+<p class="p1"><span class="s1">                        if (url) return url;</span></p>
+<p class="p1"><span class="s1">                    }</span></p>
+<p class="p1"><span class="s1">                }</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p1"><span class="s1">            return null;</span></p>
+<p class="p1"><span class="s1">        }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">        function closePlayer() {</span></p>
+<p class="p1"><span class="s1">            if($axure.page.location) window.location.href = $axure.page.location;</span></p>
+<p class="p1"><span class="s1">            else {</span></p>
+<p class="p1"><span class="s1">                var pageFile = getInitialUrl();</span></p>
+<p class="p1"><span class="s1">                var currentLocation = window.location.toString();</span></p>
+<p class="p1"><span class="s1">                window.location.href = currentLocation.substr(0, currentLocation.lastIndexOf("/") + 1) + pageFile;</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p1"><span class="s1">        }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">        function replaceHash(newHash) {</span></p>
+<p class="p1"><span class="s1">            var currentLocWithoutHash = window.location.toString().split('#')[0];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            //We use replace so that every hash change doesn't get appended to the history stack.</span></p>
+<p class="p1"><span class="s1">            //We use replaceState in browsers that support it, else replace the location</span></p>
+<p class="p1"><span class="s1">            if(typeof window.history.replaceState != 'undefined') {</span></p>
+<p class="p1"><span class="s1">                try {</span></p>
+<p class="p1"><span class="s1">                    //Chrome 45 (Version 45.0.2454.85 m) started throwing an error here when generated locally (this only happens with sitemap open) which broke all interactions.</span></p>
+<p class="p1"><span class="s1">                    //try catch breaks the url adjusting nicely when the sitemap is open, but all interactions and forward and back buttons work.</span></p>
+<p class="p1"><span class="s1">                    //Uncaught SecurityError: Failed to execute 'replaceState' on 'History': A history state object with URL 'file:///C:/Users/Ian/Documents/Axure/HTML/Untitled/start.html#p=home' cannot be created in a document with origin 'null'.</span></p>
+<p class="p1"><span class="s1">                    window.history.replaceState(null, null, currentLocWithoutHash + newHash);</span></p>
+<p class="p1"><span class="s1">                } catch(ex) {}</span></p>
+<p class="p1"><span class="s1">            } else {</span></p>
+<p class="p1"><span class="s1">                window.location.replace(currentLocWithoutHash + newHash);</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p1"><span class="s1">        }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">        function collapse() {</span></p>
+<p class="p1"><span class="s1">            setVarInCurrentUrlHash('c', 1);</span></p>
+<p class="p1"><span class="s1">            if(!toolBarOnly) lastLeftPanelWidth = $('#leftPanel').width();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            $('#maximizePanelContainer').show();</span></p>
+<p class="p1"><span class="s1">            $('#leftPanel').hide();</span></p>
+<p class="p1"><span class="s1">            $('.vsplitbar').hide();</span></p>
+<p class="p1"><span class="s1">            $('#rightPanel').width($(window).width());</span></p>
+<p class="p1"><span class="s1">            $(window).resize();</span></p>
+<p class="p1"><span class="s1">            $('#outerContainer').trigger('resize');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            $(document).trigger('sidebarCollapse');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            if(MOBILE_DEVICE) {</span></p>
+<p class="p1"><span class="s1">                $('#maximizePanelContainer').animate({</span></p>
+<p class="p1"><span class="s1">                    top:$('#rightPanel').height() - $('#maximizePanelContainer').height()</span></p>
+<p class="p1"><span class="s1">                }, 300, 'swing', function() {</span></p>
+<p class="p1"><span class="s1">                    $('#maximizePanelContainer').css('top', 'inherit').css('bottom', '0px');</span></p>
+<p class="p1"><span class="s1">                });</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p1"><span class="s1">        }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">        function expand() {</span></p>
+<p class="p1"><span class="s1">            if(MOBILE_DEVICE) {</span></p>
+<p class="p1"><span class="s1">                $('#maximizePanelContainer').css('top', '0px').css('bottom', 'inherit');</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            deleteVarFromCurrentUrlHash('c');</span></p>
+<p class="p1"><span class="s1">            $('#maximizePanelContainer').hide();</span></p>
+<p class="p1"><span class="s1">            $('#leftPanel').width(lastLeftPanelWidth);</span></p>
+<p class="p1"><span class="s1">            $('#leftPanel').show();</span></p>
+<p class="p1"><span class="s1">            if(!toolBarOnly) {</span></p>
+<p class="p1"><span class="s1">                $('.vsplitbar').show();</span></p>
+<p class="p1"><span class="s1">                $('#rightPanel').width($(window).width() - $('#leftPanel').width() - 1);</span></p>
+<p class="p1"><span class="s1">            } else {</span></p>
+<p class="p1"><span class="s1">                $axure.player.collapseToBar();</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p1"><span class="s1">            $(window).resize();</span></p>
+<p class="p1"><span class="s1">            $('#outerContainer').trigger('resize');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            $(document).trigger('sidebarExpanded');</span></p>
+<p class="p1"><span class="s1">        }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">        function mainFrame_onload() {</span></p>
+<p class="p1"><span class="s1">            if($axure.page.pageName) document.title = $axure.page.pageName;</span></p>
+<p class="p1"><span class="s1">        }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">        function getQueryString(query) {</span></p>
+<p class="p1"><span class="s1">            var qstring = self.location.href.split("?");</span></p>
+<p class="p1"><span class="s1">            if(qstring.length &lt; 2) return "";</span></p>
+<p class="p1"><span class="s1">            return GetParameter(qstring, query);</span></p>
+<p class="p1"><span class="s1">        }</span></p>
+<p class="p1"><span class="s1">        </span></p>
+<p class="p1"><span class="s1">        function GetParameter(qstring, query) {</span></p>
+<p class="p1"><span class="s1">            var prms = qstring[1].split("&amp;");</span></p>
+<p class="p1"><span class="s1">            var frmelements = new Array();</span></p>
+<p class="p1"><span class="s1">            var currprmeter, querystr = "";</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            for(var i = 0; i &lt; prms.length; i++) {</span></p>
+<p class="p1"><span class="s1">                currprmeter = prms[i].split("=");</span></p>
+<p class="p1"><span class="s1">                frmelements[i] = new Array();</span></p>
+<p class="p1"><span class="s1">                frmelements[i][0] = currprmeter[0];</span></p>
+<p class="p1"><span class="s1">                frmelements[i][1] = currprmeter[1];</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            for(j = 0; j &lt; frmelements.length; j++) {</span></p>
+<p class="p1"><span class="s1">                if(frmelements[j][0].toLowerCase() == query.toLowerCase()) {</span></p>
+<p class="p1"><span class="s1">                    querystr = frmelements[j][1];</span></p>
+<p class="p1"><span class="s1">                    break;</span></p>
+<p class="p1"><span class="s1">                }</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p1"><span class="s1">            return querystr;</span></p>
+<p class="p1"><span class="s1">        }</span></p>
+<p class="p1"><span class="s1">        </span></p>
+<p class="p1"><span class="s1">        function getHashStringVar(query) {</span></p>
+<p class="p1"><span class="s1">            var qstring = self.location.href.split("#");</span></p>
+<p class="p1"><span class="s1">            if(qstring.length &lt; 2) return "";</span></p>
+<p class="p1"><span class="s1">            return GetParameter(qstring, query);</span></p>
+<p class="p1"><span class="s1">        }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">        function setHashStringVar(currentHash, varName, varVal) {</span></p>
+<p class="p1"><span class="s1">            var varWithEqual = varName + '=';</span></p>
+<p class="p1"><span class="s1">            var poundVarWithEqual = varVal === '' ? '' :  '#' + varName + '=' + varVal;</span></p>
+<p class="p1"><span class="s1">            var ampVarWithEqual = varVal === '' ? '' :  '&amp;' + varName + '=' + varVal;</span></p>
+<p class="p1"><span class="s1">            var hashToSet = '';</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            var pageIndex = currentHash.indexOf('#' + varWithEqual);</span></p>
+<p class="p1"><span class="s1">            if(pageIndex == -1) pageIndex = currentHash.indexOf('&amp;' + varWithEqual);</span></p>
+<p class="p1"><span class="s1">            if(pageIndex != -1) {</span></p>
+<p class="p1"><span class="s1">                var newHash = currentHash.substring(0, pageIndex);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                newHash = newHash == '' ? poundVarWithEqual : newHash + ampVarWithEqual;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                var ampIndex = currentHash.indexOf('&amp;', pageIndex + 1);</span></p>
+<p class="p1"><span class="s1">                if(ampIndex != -1) {</span></p>
+<p class="p1"><span class="s1">                    newHash = newHash == '' ? '#' + currentHash.substring(ampIndex + 1) : newHash + currentHash.substring(ampIndex);</span></p>
+<p class="p1"><span class="s1">                }</span></p>
+<p class="p1"><span class="s1">                hashToSet = newHash;</span></p>
+<p class="p1"><span class="s1">            } else if(currentHash.indexOf('#') != -1) {</span></p>
+<p class="p1"><span class="s1">                hashToSet = currentHash + ampVarWithEqual;</span></p>
+<p class="p1"><span class="s1">            } else {</span></p>
+<p class="p1"><span class="s1">                hashToSet = poundVarWithEqual;</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            if(hashToSet != '' || varVal == '') {</span></p>
+<p class="p1"><span class="s1">                return hashToSet;</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            return null;</span></p>
+<p class="p1"><span class="s1">        }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">        function setVarInCurrentUrlHash(varName, varVal) {</span></p>
+<p class="p1"><span class="s1">            var newHash = setHashStringVar(window.location.hash, varName, varVal);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            if(newHash != null) {</span></p>
+<p class="p1"><span class="s1">                replaceHash(newHash);</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p1"><span class="s1">        }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">        function deleteHashStringVar(currentHash, varName) {</span></p>
+<p class="p1"><span class="s1">            var varWithEqual = varName + '=';</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            var pageIndex = currentHash.indexOf('#' + varWithEqual);</span></p>
+<p class="p1"><span class="s1">            if(pageIndex == -1) pageIndex = currentHash.indexOf('&amp;' + varWithEqual);</span></p>
+<p class="p1"><span class="s1">            if(pageIndex != -1) {</span></p>
+<p class="p1"><span class="s1">                var newHash = currentHash.substring(0, pageIndex);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                var ampIndex = currentHash.indexOf('&amp;', pageIndex + 1);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                //IF begin of string....if none blank, ELSE # instead of &amp; and rest</span></p>
+<p class="p1"><span class="s1">                //IF in string....prefix + if none blank, ELSE &amp;-rest</span></p>
+<p class="p1"><span class="s1">                if(newHash == '') { //beginning of string</span></p>
+<p class="p1"><span class="s1">                    newHash = ampIndex != -1 ? '#' + currentHash.substring(ampIndex + 1) : '';</span></p>
+<p class="p1"><span class="s1">                } else { //somewhere in the middle</span></p>
+<p class="p1"><span class="s1">                    newHash = newHash + (ampIndex != -1 ? currentHash.substring(ampIndex) : '');</span></p>
+<p class="p1"><span class="s1">                }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">                return newHash;</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            return null;</span></p>
+<p class="p1"><span class="s1">        }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">        function deleteVarFromCurrentUrlHash(varName) {</span></p>
+<p class="p1"><span class="s1">            var newHash = deleteHashStringVar(window.location.hash, varName);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">            if(newHash != null) {</span></p>
+<p class="p1"><span class="s1">                replaceHash(newHash);</span></p>
+<p class="p1"><span class="s1">            }</span></p>
+<p class="p1"><span class="s1">        }</span></p>
+<p class="p1"><span class="s1">    --&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">    </span></p>
+<p class="p1"><span class="s1">    &lt;link type="text/css" rel="Stylesheet" href="plugins/sitemap/styles/sitemap.css" /&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;link type="text/css" rel="Stylesheet" href="plugins/page_notes/styles/page_notes.css" /&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;link type="text/css" rel="Stylesheet" href="plugins/debug/styles/debug.css" /&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;script src="resources/scripts/startPost.js"&gt;&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">    &lt;!--&lt;link type="text/css" rel="Stylesheet" href="plugins/recordplay/styles/recordplay.css" /&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;script type="text/javascript" src="plugins/recordplay/recordplay.js"&gt;&lt;/script&gt;--&gt;</span></p>
+<p class="p1"><span class="s1">    </span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body scroll="no" class="hashover"&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;div id="outerContainer"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">        &lt;div id="leftPanel"&gt;</span></p>
+<p class="p1"><span class="s1">            &lt;div id="interfaceControlFrame"&gt;</span></p>
+<p class="p1"><span class="s1">                &lt;div id="interfaceControlFrameMinimizeContainer"&gt;</span></p>
+<p class="p1"><span class="s1">                    &lt;a title="Collapse" id="interfaceControlFrameMinimizeButton" onclick="collapse();"&gt;&amp;nbsp;&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">                &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">                &lt;div id="interfaceControlFrameHeaderContainer"&gt;</span></p>
+<p class="p1"><span class="s1">                    &lt;ul id="interfaceControlFrameHeader"&gt;&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1">                &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">                &lt;div id="interfaceControlFrameContainer"&gt;</span></p>
+<p class="p1"><span class="s1">                    &lt;div id="interfaceControlFrameLogoContainer"&gt;</span></p>
+<p class="p1"><span class="s1">                        &lt;div id="interfaceControlFrameLogoImageContainer"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">                        &lt;div id="interfaceControlFrameLogoCaptionContainer"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">                    &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">                    &lt;div id="interfaceControlFrameHostContainer"&gt;</span></p>
+<p class="p1"><span class="s1">                    &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">                &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">                &lt;div id="interfaceControlFrameCloseContainer"&gt;</span></p>
+<p class="p1"><span class="s1">                    &lt;a title="Close" id="interfaceControlFrameCloseButton" onclick="closePlayer();"&gt;CLOSE&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">                &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">            &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;div id="rightPanel"&gt;</span></p>
+<p class="p1"><span class="s1">            &lt;iframe id="mainFrame" name="mainFrame" width="100%" height="100%" src="" frameborder="0" style="display: block;" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">    &lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">    &lt;div id="maximizePanelContainer"&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;iframe id="expandFrame" src="resources/expand.html" width="100%" height="100%" scrolling="no" allowtransparency="true" frameborder="0"&gt;&lt;/iframe&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
